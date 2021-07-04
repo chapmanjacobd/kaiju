@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <div x-data="dropdown">
+    <button @click="toggle">Toggle Content</button>
+
+    <div x-show="open">
+        Content...
+    </div>
+</div>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('dropdown', () => ({
+            open: false,
+
+            toggle() {
+                this.open = ! this.open
+            },
+        }))
+    })
+</script>
+  
+</html>
