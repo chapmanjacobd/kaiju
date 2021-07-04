@@ -1,4 +1,4 @@
 # kaiju
 ```
-Japanese Word --> Monster convertor
+Japanese Word --> Monster converter
 ```
