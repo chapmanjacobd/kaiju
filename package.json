@@ -1,10 +1,14 @@
 {
 	"dependencies": {
+		"@parcel/config-default": "^2.0.0-nightly.752",
+		"@parcel/resolver-glob": "^2.0.0-nightly.2374",
 		"alpinejs": "^3.2.1",
 		"bulk-replace": "^0.0.1",
-		"hepburn": "^1.2.0"
+		"hepburn": "^1.2.0",
+		"parcel": "^2.0.0-nightly.750"
 	},
 	"devDependencies": {
+		"@parcel/transformer-image": "^2.0.0-nightly.2374",
 		"@types/node": "^16.0.0",
 		"cssnano": "^5.0.6",
 		"postcss": "^8.3.5",

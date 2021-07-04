@@ -1,3 +1,7 @@
 {
-  "resolvers": ["@parcel/resolver-glob"]
+  "extends": "@parcel/config-default",
+  "resolvers": ["@parcel/resolver-glob", "..."],
+	"transformers": {
+		"*.jpg": ["@parcel/transformer-raw"]
+	}
 }

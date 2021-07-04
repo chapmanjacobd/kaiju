@@ -1,8 +1,8 @@
 import Alpine from 'alpinejs';
 import hepburn from 'hepburn';
-import heads from './h/*.jpg';
-import bodies from './b/*.jpg';
-import tails from './t/*.jpg';
+import heads from 'url:./h/*.jpg';
+import bodies from 'url:./b/*.jpg';
+import tails from 'url:./t/*.jpg';
 
 window.Alpine = Alpine;
 
