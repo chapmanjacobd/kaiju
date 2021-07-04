@@ -1,26 +1,31 @@
 <html>
-  <head>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  </head>
 
-  <div x-data="dropdown">
-    <button @click="toggle">Toggle Content</button>
+<head>
+    <script defer src="./app.ts"></script>
+</head>
 
-    <div x-show="open">
-        Content...
-    </div>
+<div x-data="kaibutsu">
+    <input id="name" type="text" x-model="name" autocomplete="kaibutsu" spellcheck="false"
+        style="text-transform:uppercase" />
+
+    <div x-text="hiragana"></div>
+    <div x-text="katakana"></div>
+
+    <template x-if="name.length >= 2">
+
+        <div>
+            <img :src="name_wa()[0]">
+
+            <template x-for="b in name_wa()[1]">
+                <!-- <div x-text="b"></div> -->
+                <img :src="b">
+            </template>
+
+            <img :src="name_wa()[2]">
+        </div>
+
+    </template>
+
 </div>
 
-<script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('dropdown', () => ({
-            open: false,
-
-            toggle() {
-                this.open = ! this.open
-            },
-        }))
-    })
-</script>
-  
 </html>

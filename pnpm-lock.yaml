@@ -1,0 +1,56 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@types/node': ^16.0.0
+  alpinejs: ^3.2.1
+  bulk-replace: ^0.0.1
+  hepburn: ^1.2.0
+  typescript: ^4.3.5
+
+dependencies:
+  alpinejs: 3.2.1
+  bulk-replace: 0.0.1
+  hepburn: 1.2.0
+
+devDependencies:
+  '@types/node': 16.0.0
+  typescript: 4.3.5
+
+packages:
+
+  /@types/node/16.0.0:
+    resolution: {integrity: sha512-TmCW5HoZ2o2/z2EYi109jLqIaPIi9y/lc2LmDCWzuCi35bcaQ+OtUh6nwBiFK7SOu25FAU5+YKdqFZUwtqGSdg==}
+    dev: true
+
+  /@vue/reactivity/3.1.4:
+    resolution: {integrity: sha512-YDlgii2Cr9yAoKVZFzgY4j0mYlVT73986X3e5SPp6ifqckSEoFSUWXZK2Tb53TB/9qO29BEEbspnKD3m3wAwkA==}
+    dependencies:
+      '@vue/shared': 3.1.4
+    dev: false
+
+  /@vue/shared/3.1.4:
+    resolution: {integrity: sha512-6O45kZAmkLvzGLToBxEz4lR2W6kXohCtebV2UxjH9GXjd8X9AhEn68FN9eNanFtWNzvgw1hqd6HkPRVQalqf7Q==}
+    dev: false
+
+  /alpinejs/3.2.1:
+    resolution: {integrity: sha512-MYYGUmVHNWN27TvgAtUCYXZlfsXoVCrLQT3a0Ak6CQKqf1TCHfQKxmhzJWscW5kPcLlOK2aYmWbV2H+XyfN2FQ==}
+    dependencies:
+      '@vue/reactivity': 3.1.4
+    dev: false
+
+  /bulk-replace/0.0.1:
+    resolution: {integrity: sha1-8JVoKolqvUs9ngjeQJzCIuIT+d0=}
+    dev: false
+
+  /hepburn/1.2.0:
+    resolution: {integrity: sha512-xWjHb03dN/ivNcqG2vqA//sHQ0oapYGZ9QV/2TR7m2+cggxzoVpbDxZn9s/Zm1tF88/7a1IpdZyn00tNP5oABA==}
+    engines: {node: '>=4'}
+    dependencies:
+      bulk-replace: 0.0.1
+    dev: false
+
+  /typescript/4.3.5:
+    resolution: {integrity: sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
