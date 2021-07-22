@@ -3,8 +3,13 @@ import hepburn from "hepburn";
 import heads from "url:./h/*.jpg";
 import bodies from "url:./b/*.jpg";
 import tails from "url:./t/*.jpg";
+import Konami from "konami";
 
 window.Alpine = Alpine;
+
+Konami(function () {
+  alert("Konami Code!");
+});
 
 document.addEventListener("alpine:init", () => {
   Alpine.data("kaibutsu", () => ({

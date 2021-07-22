@@ -5,6 +5,7 @@
 		"alpinejs": "^3.2.1",
 		"bulk-replace": "^0.0.1",
 		"hepburn": "^1.2.0",
+		"konami": "^1.6.2",
 		"parcel": "^2.0.0-nightly.750"
 	},
 	"devDependencies": {
